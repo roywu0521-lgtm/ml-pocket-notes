@@ -2,10 +2,33 @@
 
 一個以 **AGENTS.md 驅動內容延伸**的繁體中文學習網站。每篇筆記固定包含概念、自編示例、常見誤解、一句話重點、三選一自測與原始來源。以內容 JSON 與共用產生器分離知識和版型，不需要付費服務或 API。
 
-- 公開網站：https://roywu0521-lgtm.github.io/ml-pocket-notes/
-- 協作規則展示：https://roywu0521-lgtm.github.io/ml-pocket-notes/rules.html
-- GitHub：https://github.com/roywu0521-lgtm/ml-pocket-notes
-- [作業繳交文字](SUBMISSION.md) · [驗證紀錄](VERIFICATION.md)
+## 作業閱讀導覽
+
+建議依序閱讀以下三個入口，即可了解網站成果、AI 協作規則與內容延伸方式。
+
+| 閱讀順序 | 入口 | 可以看到什麼 |
+| --- | --- | --- |
+| 1. 瀏覽成果 | [公開網站](https://roywu0521-lgtm.github.io/ml-pocket-notes/) | 五篇筆記、搜尋分類與自我測驗 |
+| 2. 查看本次作業核心 | [AGENTS.md](AGENTS.md) | 專案目的、檔案結構、視覺風格、內容格式與 AI 開發規則 |
+| 3. 了解如何繼續擴充 | [新增筆記示範](examples/extension.md) · [內容範本](templates/note.json) | 同一套規則如何產生下一篇筆記 |
+
+規則也能直接在[網站的協作規則頁](https://roywu0521-lgtm.github.io/ml-pocket-notes/rules.html)閱讀及下載。
+
+## 其他檔案的用途
+
+| 檔案／資料夾 | 用途 |
+| --- | --- |
+| `content/notes/` | 五篇筆記的原始內容 |
+| `src/`、`scripts/`、`package.json` | 共用設計、網頁產生器與檢查工具，讓 AI 可以持續新增內容 |
+| `docs/` | GitHub Pages 實際發布的網站，從內容來源與共用程式產生 |
+| [VERIFICATION.md](VERIFICATION.md) | 已完成的驗證與限制 |
+| [SUBMISSION.md](SUBMISSION.md) | 作業平台使用的繳交文字草稿 |
+
+筆記來源與產生好的網頁分開保存，才能保留修改與重新建置的流程。各資料夾的詳細規則見 AGENTS.md。
+
+<details>
+<summary>開發與部署說明（延伸專案時再閱讀）</summary>
+
 
 ## 本機使用
 
@@ -42,6 +65,8 @@ GitHub 官方操作來源：https://docs.github.com/en/pages/getting-started-wit
 ## 驗證範圍
 
 `npm test` 檢查資料契約、非未來日期、排序唯一性、相關文章、HTML 本機資源／錨點與規則同步；它不會自動查證知識正確性、不會確認外部網址可用，也不能取代瀏覽器的版面與互動檢查。外部來源必須由作者實際查核。
+
+</details>
 
 ## AI 協作與內容說明
 
