@@ -1,4 +1,4 @@
-# 繳交草稿（公開網址完成後再補齊）
+# 作業繳交文字（標題個人資料請自行補齊）
 
 繳交標題：［學校簡稱］ ［學號］ ［系級簡稱］ ［姓名］ 機器學習口袋筆記
 
@@ -8,15 +8,17 @@
 
 ## 2. GitHub Repository 連結
 
-［待實際上傳後填入，不可填推測網址］
+https://github.com/roywu0521-lgtm/ml-pocket-notes
 
 ## 3. 網頁連結
 
-［待部署成功後填入，不可將 localhost 當成公開網址］
+https://roywu0521-lgtm.github.io/ml-pocket-notes/
 
 ## 4. AGENTS.md
 
-請附 repository 根目錄的 AGENTS.md 連結，或貼上該檔案全文。網站亦提供協作規則展示頁與下載。
+規則文件：https://github.com/roywu0521-lgtm/ml-pocket-notes/blob/main/AGENTS.md
+
+網頁展示與下載：https://roywu0521-lgtm.github.io/ml-pocket-notes/rules.html
 
 ## 5. 新增內容時，規則如何協助 AI？
 

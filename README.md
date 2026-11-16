@@ -2,6 +2,11 @@
 
 一個以 **AGENTS.md 驅動內容延伸**的繁體中文學習網站。每篇筆記固定包含概念、自編示例、常見誤解、一句話重點、三選一自測與原始來源。以內容 JSON 與共用產生器分離知識和版型，不需要付費服務或 API。
 
+- 公開網站：https://roywu0521-lgtm.github.io/ml-pocket-notes/
+- 協作規則展示：https://roywu0521-lgtm.github.io/ml-pocket-notes/rules.html
+- GitHub：https://github.com/roywu0521-lgtm/ml-pocket-notes
+- [作業繳交文字](SUBMISSION.md) · [驗證紀錄](VERIFICATION.md)
+
 ## 本機使用
 
 需求：Node.js 22 以上；零外部相依套件，不需要 npm install。
@@ -12,7 +17,7 @@ npm test
 npm run serve
 ```
 
-開啟 http://127.0.0.1:4173。也能直接開啟 `docs/index.html` 閱讀，搜尋與分類不依賴 fetch。停止預覽按 Ctrl+C。
+開啟 <http://127.0.0.1:4173>。也能直接開啟 `docs/index.html` 閱讀，搜尋與分類不依賴 fetch。停止預覽按 Ctrl+C。
 
 ## 新增筆記
 

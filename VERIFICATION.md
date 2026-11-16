@@ -14,8 +14,14 @@
 - 混淆矩陣文章可展開自測答案，顯示 B：FN 與解釋。
 - 規則頁顯示完整 AGENTS.md，下載連結指向 AGENTS.txt。
 
-## 尚待更新
+## 公開部署已完成
 
-- GitHub 完整來源同步與 Pages 公開部署。
-- 公開網址的首頁、文章、規則頁驗證。
+- 完整來源已推送至 https://github.com/roywu0521-lgtm/ml-pocket-notes 。
+- GitHub Pages 已設定 main 分支的 /docs，設定頁顯示 Your site is live。
+- 實際開啟 https://roywu0521-lgtm.github.io/ml-pocket-notes/ ，首頁與樣式正常。
+- 公開版搜尋「混淆矩陣」顯示 1 / 5 篇；可開啟文章並展開答案 B：FN；可進入完整規則展示頁。
+- 作業平台尚未繳交；標題的個人資料待使用者自行確認。
+
+## 驗證限制
+
 - 未進行全瀏覽器相容性或完整無障礙稽核；不可將以上檢查解讀為這兩項已完成。
