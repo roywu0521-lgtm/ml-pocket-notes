@@ -1,0 +1,10 @@
+{
+  "slug": "cross-validation", "order": 3, "title": "交叉驗證：換幾組資料再看看", "summary": "輪流保留不同資料做驗證，觀察模型表現。", "category": "模型評估", "minutes": 3, "updated": "2026-11-16",
+  "concept": ["K-fold 交叉驗證把開發資料分成 K 份，每輪用其中一份驗證，其餘份數訓練，最後彙整各輪分數。", "交叉驗證可用於模型選擇，仍應保留最後測試集。時間序列與群組資料需要符合結構的切分策略，不能直接套用一般隨機切分。"],
+  "example": {"title": "自編示例：五份輪流驗證", "body": "假設 100 筆開發資料可分成五份，每份 20 筆。做 5-fold 時每輪用 80 筆訓練、20 筆驗證，共訓練五次。每一筆在其中一輪擔任驗證資料；它不代表五次使用完全相同的模型，也不代表已完成獨立測試。"},
+  "pitfall": "誤解：做了交叉驗證，就可以反覆用最後測試集調參。更正：最後測試集仍應保留，避免模型選擇依賴測試結果。",
+  "takeaway": "讓資料輪流當驗證集，最後測試集仍留到最後。",
+  "quiz": {"question": "標準 5-fold 交叉驗證中，每輪有幾份資料用來訓練？", "options": ["四份", "一份", "五份"], "answer": 0, "explanation": "五份中保留一份驗證，其餘四份用來訓練；這個流程輪替五次。"},
+  "sources": [{"title": "scikit-learn：K-fold cross-validation", "url": "https://scikit-learn.org/stable/modules/cross_validation.html#k-fold", "checked": "2026-11-16"}],
+  "related": ["train-test-split", "overfitting"]
+}

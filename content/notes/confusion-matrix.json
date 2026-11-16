@@ -1,0 +1,10 @@
+{
+  "slug": "confusion-matrix", "order": 4, "title": "混淆矩陣：模型錯在哪一種？", "summary": "把預測與實際標籤交叉比較，看清楚錯誤的方向。", "category": "模型評估", "minutes": 4, "updated": "2026-11-16",
+  "concept": ["混淆矩陣整理實際類別與預測類別的次數。閱讀前先確認座標定義；scikit-learn 採用列為實際類別、欄為預測類別的慣例。", "二元分類須先指定正類。TP 是實際正且預測正，FN 是實際正卻預測負；precision = TP / (TP + FP)，recall = TP / (TP + FN)。分母為零時需說明處理方式。"],
+  "example": {"title": "自編示例：重要郵件分類", "body": "把『重要郵件』設為正類。假設 10 封實際重要郵件中，模型找對 8 封、漏掉 2 封；另外把 3 封一般郵件錯標為重要。TP=8、FN=2、FP=3，recall=8/10=80%，precision=8/11≈72.7%。這些數字是自編示範，並非產品實測。"},
+  "pitfall": "誤解：混淆矩陣的列、欄在每個工具都一樣。更正：先讀軸標籤和正類定義，再判斷 FP 與 FN。",
+  "takeaway": "先確認正類與軸，再解讀錯誤的方向。",
+  "quiz": {"question": "實際重要、卻被預測為一般郵件，屬於哪一種情況？", "options": ["TP：真正例", "FN：偽負例", "FP：偽正例"], "answer": 1, "explanation": "重要是正類；實際為正卻預測為負，就是 FN，也稱漏判。"},
+  "sources": [{"title": "scikit-learn：Confusion matrix 與分類指標", "url": "https://scikit-learn.org/stable/modules/model_evaluation.html#confusion-matrix", "checked": "2026-11-16"}],
+  "related": ["cross-validation", "train-test-split"]
+}

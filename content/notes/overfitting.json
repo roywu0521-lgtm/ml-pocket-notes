@@ -1,0 +1,10 @@
+{
+  "slug": "overfitting", "order": 2, "title": "過度擬合：背熟了，還是學會了？", "summary": "訓練分數很好，並不代表模型能處理新的資料。", "category": "模型觀念", "minutes": 3, "updated": "2026-11-16",
+  "concept": ["過度擬合是模型太貼近訓練資料中的細節，使未見資料上的表現較差。高訓練分數與較低的驗證分數，是值得進一步檢查的訊號。", "可觀察訓練與驗證曲線，評估模型複雜度的影響。單一分數差距不能完整說明成因，仍需檢查資料切分、資料品質及評估流程。"],
+  "example": {"title": "自編示例：兩個分類模型", "body": "假設模型甲的訓練 accuracy 是 99%，驗證 accuracy 是 70%；模型乙分別是 86% 和 83%。這組假設數字提醒我們檢查甲是否過度擬合，但不能只憑這四個數字就斷定原因，也不能宣稱乙在所有情境都更好。"},
+  "pitfall": "誤解：訓練分數越高就越值得採用。更正：應優先檢查對未見資料的表現，並考慮指標與評估方式是否合理。",
+  "takeaway": "看模型是否學會，別只看它在練習題上得幾分。",
+  "quiz": {"question": "哪一組現象比較值得檢查過度擬合？", "options": ["訓練與驗證分數都低", "訓練與驗證分數相近且高", "訓練分數高、驗證分數明顯較低"], "answer": 2, "explanation": "訓練與驗證之間的大差距是警訊，接著還需要檢查切分方式、資料與模型複雜度。"},
+  "sources": [{"title": "scikit-learn：Validation curves", "url": "https://scikit-learn.org/stable/modules/learning_curve.html", "checked": "2026-11-16"}],
+  "related": ["train-test-split", "cross-validation"]
+}

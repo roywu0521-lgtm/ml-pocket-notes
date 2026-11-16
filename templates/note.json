@@ -1,0 +1,16 @@
+{
+  "slug": "your-new-topic",
+  "order": 6,
+  "title": "填入概念名稱",
+  "summary": "填入一句話摘要。",
+  "category": "資料準備",
+  "minutes": 3,
+  "updated": "YYYY-MM-DD",
+  "concept": ["填入已查證概念。"],
+  "example": {"title": "自編示例：填入情境", "body": "填入假設與解釋，不能假稱實驗結果。"},
+  "pitfall": "填入常見誤解與更正。",
+  "takeaway": "填入一句話重點。",
+  "quiz": {"question": "填入問題", "options": ["選項一", "選項二", "選項三"], "answer": 0, "explanation": "填入正解與理由。"},
+  "sources": [{"title": "官方來源標題", "url": "https://example.com/replace-with-verified-source", "checked": "YYYY-MM-DD"}],
+  "related": ["train-test-split"]
+}
